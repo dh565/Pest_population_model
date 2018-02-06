@@ -3,7 +3,7 @@
 """
 Created on Mon Nov 20 16:04:39 2017
 
-@author: davidhelman
+@author: davidhelman ; Moshe Blum
 """
 
 import os
