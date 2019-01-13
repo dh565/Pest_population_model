@@ -84,7 +84,7 @@ def plot_matrix(xD,yD,ini_pop,fin_N,cmap):
 #    cax = plt.axes([0.95, 0.12, 0.075, 0.76])
     # =======================================================================#
     # Set image title
-    ax.set_title('Population distribution in space (%)')
+    ax.set_title('Initial population distribution (%)')
     # =======================================================================#
     # Plot colorbar
     plt.colorbar() #plt.colorbar(cax=cax)
@@ -110,7 +110,7 @@ def plot_matrix(xD,yD,ini_pop,fin_N,cmap):
 #    cax = plt.axes([0.85, 0.12, 0.075, 0.76])
     # =======================================================================#
     # Set image title
-    ax.set_title('Population distribution in space (%)')
+    ax.set_title('Final population distribution (%)')
     # =======================================================================#
     # Plot colorbar
     plt.colorbar() #plt.colorbar(cax=cax)
