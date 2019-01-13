@@ -24,25 +24,27 @@ start = time.time()
 # Import modules (including def of RK4).
 # ===========================================================#
 import numpy as np
-import ee
+import os
 import matplotlib.pyplot as plt
 from numpy import zeros
 from numpy import array
 from RK4_2D_procedure import RK4_2D  # for RK4 on 2D.
 from display_plots import *          # for displaying results.
 # ===========================================================#
-# Input temperature matrix (single-day temp. per pixel).
+# Download temperature 2D TIFs from GEE as a batch.
 # ===========================================================#
-#from download_gee import *
-#start_data = '2016-08-01'
-#end_date   = '2016-08-05'
-import os
+from Download_Temp_GEE import *
+start_date = '2018-04-16'
+end_date   = '2018-04-21'
+download   = gee_temp(start_date,end_date)
+# ===========================================================#
+# Input temperature (2D) from saved TIF (imported from GEE).
+# ===========================================================#
+run_date   = '2018_04_17'
 from osgeo import gdal
 os.chdir('/Users/davidhelman/Google Drive (davidhelman1@gmail.com)/ts_RS-PestDyn')
-ds  = gdal.Open('MYD11A2_LST_DAY_2016_08_04.tif')
+ds  = gdal.Open('MYD11A1_LST_DAY_'+run_date+'.tif')
 temperature = np.array(ds.GetRasterBand(1).ReadAsArray())*0.02 - 275.15
-#temperature = gee_temp(start_data,end_date)
-
 #temperature = [[9.8,20.2,26.1,21.7],
 #               [12.8,13.2,16.1,11.7],
 #               [17.6,29.9,19.6,18.9],
