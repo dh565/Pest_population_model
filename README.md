@@ -5,12 +5,12 @@ This is a python code of an insect pest population dynamics model, which current
 Main program to run:
 'run_RK4_2D.py'
 
-Procedures called (3):
+*Procedures called (3):*
 * 'Download_Temp_GEE.py' - download TIF files of LST from MODIS as a batch from GEE
-* 'RK4_2D_procedure.py'  - solves the ode using Runge-Kutta
+* 'RK4_2D_procedure.py'  - solves the ODE using Runge-Kutta
 * 'display_plots.py'     - displays results (as a 2D matrix of % population)
 
-Needs:
+*Needs:*
 1) extend to entire period (currently for 1 day)
 2) extend to other life stages (currently only 1)
 3) improve solution for error expansion through time.
