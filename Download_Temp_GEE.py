@@ -3,8 +3,17 @@
 """
 Created on Sun Jan 13 12:53:47 2019
 
-@author: davidhelman
+@author: David Helman
 """
+# ============================================================================ #
+# This program is called by 'run_RK4_2D.py' to download MODIS LST TIF files
+# from GEE for a specific AOI and period. 'run_RK4_2D.py' then reads a single
+# TIF file and calculate the population of the insect pest as a 2D matrix for
+# a single day (hack for now).
+#
+# Author: David Helman
+# Date: 13 January, 2019
+# ============================================================================ #
 
 def gee_temp(start_date,end_date):
     import datetime
