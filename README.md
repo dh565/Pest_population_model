@@ -1,4 +1,4 @@
-RS-PestDyn
+**RS-PestDyn**
 
 This is a python code of insect pest population dynamics model, which currently simulates one life stage of a generic insec pest for a single day. The model uses a numerical solution for the differential equation of age distribution through a the  Runge-Kutta method. The main driver of this model is temperature. The satellite-derived land surface temperature product of MODIS (1km, daily) is used as input to the model.
 
