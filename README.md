@@ -10,10 +10,10 @@ The **R**emote **S**ensing insect **Pest** **Dyn**amic model is an insect pest p
 * 'RK4_2D_procedure.py'  - solves the ODE using Runge-Kutta
 * 'display_plots.py'     - displays results (as a 2D matrix of % population)
 
-*Still Needs:*
-1) extend to entire period (currently for 1 day)
-2) extend to other life stages (currently only 1)
-3) improve solution for error expansion through time.
-4) add LC/LU classification
-5) add plant growth dynamics
+*Still Needs To:*
+1) extend running period to a seasonal timeframe (currently for 1 day)
+2) extend the model for various life stages (currently only 1 life stage)
+3) improve numerical solution accounting for error expansion through time.
+4) add LC/LU classification to account for plant host preference
+5) add plant growth dynamics (host stage)
 6) add migration between grid cells
